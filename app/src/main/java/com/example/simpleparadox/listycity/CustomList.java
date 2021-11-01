@@ -52,7 +52,12 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.size();
     }
 
-    public void addCity(City city){
+    public boolean hasCity(City c){
+        //return cities.contains(c);
+        return true;
+    }
 
+    public void addCity(City city){
+        cities.add(city);
     }
 }
